@@ -72,3 +72,40 @@ footer {
     
 
 }
+
+
+/*THE WORLDWIDE RECIPE site -- dont want to do new css*/
+
+.imagesToRecipes img {
+    max-width: 85%;
+}
+.imagesToRecipes {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.round {
+    background-color: #ccc;
+    border-radius: 50%;
+}
+.imagesToRecipes span {
+    font-size: 20px;
+}
+
+/*HOLIDAYS */
+
+.imagesToHolidays img{
+    max-width: 85%;
+}
+.imagesToHolidays {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.round {
+    background-color: #ccc;
+    border-radius: 50%;
+}
+.imagesToRecipes span {
+    font-size: 20px;
+}
