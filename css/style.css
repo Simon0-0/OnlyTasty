@@ -53,3 +53,22 @@ nav > ul > li {
 header > .search-div {
     display: flex;
 }
+footer > .followUs ul { 
+    list-style: none;
+}
+footer > .followUs {
+    display: flex;
+}
+footer > .links {
+    display: flex;
+}
+footer > .links ul {
+    list-style: none;
+}
+footer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+}
