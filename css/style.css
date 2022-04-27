@@ -7,16 +7,27 @@
 
   }
   header > h1 {
-      border-left: -50px;
+      grid-row: 1/2;
   }
-  .topnav input[type=text] {
-    padding: 6px;
+  .nav_ul {
+    
+    text-decoration: none;
+  }
+  header > .search-div {
+      margin: 20px;
+      align-items: center;
+  }
+  header > .search-div > .signInOut{
+      padding: 5px;
+  }
+  .search-div input[type=text] {
+    padding: 10px;
     margin-top: 8px;
     font-size: 17px;
     border: none;
   }
   
-  .topnav .search-container button {
+  .search-div .search-container button {
     float: right;
     padding: 6px 10px;
     margin-top: 8px;
@@ -27,9 +38,18 @@
     cursor: pointer;
   }
   
-.topnav .search-container button:hover {
+.search-div .search-container button:hover {
   background: #ccc;
 }  
-header > .nav_ul{
+header > nav > ul{
     text-decoration: none;
-    }
+    display: flex;
+}
+nav > ul > li {
+    list-style: none;
+    padding: 2px;
+}
+
+header > .search-div {
+    display: flex;
+}
