@@ -230,3 +230,29 @@ footer {
 
 
 /*NEWS*/
+
+.serciontWithNews{
+    background-color: var(--Cream);
+}
+
+.news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+}
+.news > h4 {
+    grid-row: 1;
+    grid-column: 1/4;
+    margin: 15px;
+}
+.news > div {
+    grid-row: 2;    
+    background-color: var(--Brown);
+    padding: 10px;
+    margin: 15px;
+    max-width: 300px;
+}
+.news > div > a{
+    text-decoration: underline;
+    color: var(--Cream);
+}
