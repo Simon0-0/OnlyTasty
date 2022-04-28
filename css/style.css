@@ -1,16 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&display=swap');
+@import url('https://mlkwsn.com/product/loves-classy-sans-family/');
 
-  header {
+
+:root {
+    --Cream: #EADDCF;
+    --Dark: #020826;
+    --Reddish:#F25042;
+    --Brown: #8C7851;
+    --Whiteish:  #F9F4EF;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+header {
       display: grid;
       grid-template-rows: 1fr 1fr;
       grid-template-columns: 250px 1fr;
       justify-items: end;
+      background-color: var(--Cream);
 
+
+  }
+  .signInOut {
+       color: var(--Reddish);
+  }
+  .add-recipe {
+      background-color: var(--Whiteish);
+      border-radius: 10%;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px 5px 0 0;
+      color: var(--Reddish);
+      
+  }
+  .add-recipe-button{
+      background-color: var(--Cream);
+      border-radius: 10%;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px 5px 0 0;
+      color: var(--Reddish);
+  }
+  .here {
+      color: black;
+      text-transform: uppercase;
+      border-bottom: 3px solid #F25042;
   }
   header > h1 {
       grid-row: 1/2;
+      padding-top: 50px;
+      color: var(--Brown);
+  }
+  header > h1 span {
+      color: var(--Reddish);
   }
   .nav_ul {
-    
     text-decoration: none;
   }
   header > .search-div {
@@ -29,11 +78,10 @@
   
   .search-div .search-container button {
     float: right;
-    padding: 6px 10px;
     margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
+    background: var(--Cream);
+    font-size: 10px;
+    height: 40px;
     border: none;
     cursor: pointer;
   }
@@ -48,6 +96,12 @@ header > nav > ul{
 nav > ul > li {
     list-style: none;
     padding: 2px;
+    text-decoration: none;
+}
+nav li a {
+    text-decoration: none;
+    color: var(--Brown);
+    padding: 0 10px;
 }
 
 header > .search-div {
@@ -58,35 +112,70 @@ footer > .followUs ul {
 }
 footer > .followUs {
     display: flex;
+    align-items: stretch;
+    justify-content: space-around;
 }
 footer > .links {
     display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    
 }
 footer > .links ul {
     list-style: none;
+    color: var(--Brown);
+    text-decoration: none;
+}
+footer > .links a{
+    color: var(--Brown);
+    text-decoration: none;
+
+}
+.footer-logo {
+    text-align: center;
+}
+.footer-logo span {
+    color: var(--Reddish);
 }
 footer {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--Whiteish);
+    color: var(--Brown);
     
-
 }
 
 
 /*THE WORLDWIDE RECIPE site -- dont want to do new css*/
 
+.recipesLinks {
+    background-color: var(--Cream);
+}
 .imagesToRecipes img {
     max-width: 85%;
+    background-color: var(--Whiteish);
+    border-radius: 50%;
+    grid-row: 2;
+}
+.recipesLinks > h2 {
+    text-align: center;
+    color: var(--Reddish);
+    grid-row: 1;
+    
+}
+.imagesToHolidays div {
+    justify-content: center;
 }
 .imagesToRecipes {
     display: grid;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr 1fr auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .round {
-    background-color: #ccc;
+    background-color: var(--Whiteish);
     border-radius: 50%;
+    width: 150px;
 }
 .imagesToRecipes span {
     font-size: 20px;
@@ -95,15 +184,18 @@ footer {
 /*HOLIDAYS */
 
 .imagesToHolidays img{
-    max-width: 85%;
+    max-width: 70%;
+    background-color: var(--Whiteish);
+    border-radius: 50%;
 }
 .imagesToHolidays {
     display: grid;
     grid-template-rows: 1fr auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: var(--Cream);
 }
 .round {
-    background-color: #ccc;
+    background-color: var(--Whiteish);
     border-radius: 50%;
 }
 .imagesToRecipes span {
